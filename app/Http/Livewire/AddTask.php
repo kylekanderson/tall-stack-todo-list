@@ -19,13 +19,16 @@ class AddTask extends Component
 
     public function submit()
     {
+        // validate and save the updated task
         $this->validate();
         $task = new \App\Models\Task();
         $task->description = $this->description;
         $task->save();
 
+        // reset the field content
         $this->reset();
 
+        // emit an event to the parent component to refresh the task list
         $this->emit('taskAdded');
     }
 }
