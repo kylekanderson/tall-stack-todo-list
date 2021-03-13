@@ -23,3 +23,9 @@ Finally, use Laravel Mix to compile your assets and run a development server for
     npm run dev
     php artisan serve
 
+## Features
+New tasks can be added to the task list by entering a description and pressing 'Enter' or clicking on the 'Add' button. Tasks are assigned to the 'To-Do' category by default. For each of the tasks in the 'To-Do' category, clicking on the checkbox next to the task will mark it as complete and move it to the 'Completed' list in real-time. 
+
+The app also supports in-place editing of tasks. To do this, simply double-click on a task and you will have the ability to edit the description of the task in-place (navigating away from the field via clicking or pressing either 'Enter' or 'Escape' will commit your changes to persistent storage). 
+
+There is also some basic validation in place to ensure task descriptions are not empty.
