@@ -9,7 +9,7 @@ class AddTask extends Component
     public $description;
 
     protected $rules = [
-        'description' => 'required',
+        'description' => 'required|min:1',
     ];
 
     public function render()
